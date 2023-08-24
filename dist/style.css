@@ -1,0 +1,29 @@
+.mobile-version {
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.active {
+    right: 0;
+}
+
+.header-section {
+    transition: background-color 0.5s ease-in-out;
+    position: relative;
+}
+.transparent-black {
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+/* .transparent-black-1 {
+    background-color: rgba(0, 0, 0, 0.1);
+    
+} */
+
+/* middile heading styleing for JS */
+.heading-p h2 span {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

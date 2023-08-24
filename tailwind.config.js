@@ -5,6 +5,13 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ['Inter']
+      },
+      margin: {
+        '100': '0 auto'
+      },
+      width: {
+        '100': '45%',
+        '110': '55%'
       }
     },
   },

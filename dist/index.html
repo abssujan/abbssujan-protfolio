@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- tailwind css link -->
         <link href="/dist/output.css" rel="stylesheet">
+        <!-- custom css -->
+        <link rel="stylesheet" href="/dist/style.css">
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +18,88 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     </head>
-    <body>
+    <body class="">
         <!-- main container -->
-        <div class=" w-full">
+        <div class="main-container w-full">
             <!-- layer container -->
             <div class="layer-container flex">
                 <!-- div-right-side -->
-                <div class="right-side hidden w-2/5 h-screen lg:block">
+                <div class="right-side hidden w-100 h-screen lg:block">
                     <!-- main-image -->
-                    <img class="h-full w-full object-cover object-top contrast-75 brightness-75" src="/image/IMG_0897.jpeg" alt="">
+                    <img class="h-full w-full object-cover object-top contrast-75 brightness-75" src="/image/IMG_0916.jpeg" alt="">
                 </div>
                 <!-- div-left-side -->
-                <div class="left-side lg:w-3/5"></div>
+                <div class="left-side w-full lg:w-110 relative h-screen overflow-x-hidden">
+                    <!-- header section -->
+                    <div class="header-section h-20 border-b-2 border-black bg-white">
+                        <!-- heading logo or tag -->
+                        <div class="header-logo px-4 flex items-center justify-between h-full">
+                          <a href="#" class=" text-3xl font-inter uppercase font-bold">abssujan</a>
+                          <div class="toggle-btn z-50">
+                          <i class="fa-solid fa-bars text-3xl cursor-pointer"></i>
+                          </div>
+                        </div>
+                        <!-- dropdown menu for mobile version -->
+                        <div class="mobile-version bg-white absolute top-0 w-full md:w-96 h-screen ">
+                          <!-- mobile version container -->
+                          <div class="flex flex-col w-60 m-100 mt-20">
+                            <!-- image div -->
+                            <div class="mobile-img w-60 h-64 mt-10">
+                                <img class="w-full h-full object-cover object-top contrast-75 brightness-75 rounded-xl" src="/image/IMG_0916.jpeg" alt="">
+                            </div>
+                            <!-- mobile-social-icon -->
+                            <div class="mobile-social-icon mt-8 space-x-8 flex items-center justify-center">
+                                <a href="#" class="text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <!-- mobile-nav-list -->
+                            <ul class="flex flex-col justify-center items-center mt-7 space-y-5">
+                                <li><a class="font-inter text-3xl font-semibold" href="#">Home</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">About</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">Portfolio</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">News</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">Contact</a></li>
+                            </ul>
+                            <!-- mobile-version-footer -->
+                            <div class="mobile-version-footer mt-8 flex justify-center">
+                                <p class="text-sm"> © 2023 abssujan❤Abdus Sabur Sujan</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- pc-version-dropdown -->
+                    </div>
+                    <!-- middile container -->
+                    <div class="middile-container flex items-center h-full px-5">
+                        <!-- logo and social icon box -->
+                        <div class="middile-logo-icons">
+                            <!-- heading & paragraph -->
+                            <div class="heading-p">
+                                <h2 class="text-4xl font-bold font-inter">
+                                    <span>A</span><span>b</span><span>d</span><span>u</span><span>s</span>
+                                    <span>S</span><span>a</span><span>b</span><span>u</span><span>r</span>
+                                    <span>S</span><span>u</span><span>j</span><span>a</span><span>n</span>
+                                </h2>
+                                <p class="mt-4 text-lg text-justify font-inter font-normal  subpixel-antialiased ">
+                                     I am a front-end developer with a passion for creating beautiful
+                                     and responsive web applications.
+                                     With expertise in HTML, CSS, and JavaScript.
+                                </p>
+                            </div>
+                            <!-- social icons -->
+                            <div class="social-icons-middile"></div>
+                        </div>
+                        <!-- middile-two-buttons -->
+                        <div class="middile-two-buttons"></div>
+                    </div>
+                    <!-- footer -->
+                    <div class="h-16 border-t-2 border-black absolute bottom-0 w-full">
+                    </div>
+                </div>
             </div>
             <!-- layer container end here -->
         </div>
-        <script src="" async defer></script>
+        <script src="/main.js" ></script>
     </body>
 </html>
