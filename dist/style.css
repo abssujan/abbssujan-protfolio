@@ -33,3 +33,123 @@
     border-radius: 100%;
     transition: all 0.75s ease-in-out;
 }
+
+/* middile buttons  */
+.middile-buttons-one {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 0;
+   background: #000;
+   overflow: hidden;
+   border: none;
+
+}
+.middile-buttons-one:after{
+    content: " ";
+    width: 0%;
+    top: 0;
+    height: 100%;
+    background: #e5e5e5;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+.middile-buttons-one:hover:after {
+                                                        /* this will be create "after" width 100% 
+                                                        and make in illionson to like silder back  */
+ right: auto;
+ left: 0;
+ width: 100%;
+ top: 0;
+
+}
+ .span-text{
+    text-decoration: none;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: block;
+
+}
+.middile-buttons-one:hover .span-text {
+   color: #000000;
+   animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+       transform: scale(1);
+   }
+ 
+   50% {
+       transform: scale(0.95);
+   }
+ 
+   100% {
+       transform: scale(1);
+   }
+ }
+ /* button two */
+.middile-buttons-two {
+    --color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 15px 30px 15px 20px;
+    border-radius: 0;
+}
+.middile-buttons-two::after, .middile-buttons-two::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--color);
+}
+.middile-buttons-two::before {
+   top: -50%;
+   left: -25%;
+   transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+.middile-buttons-two:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.middile-buttons-two:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+.middile-buttons-two:hover{
+   color: #ffffff!important;
+   border: 2px solid #000000;
+   border-color: #000!important;
+
+}
+.middile-buttons-two:active {
+   filter: brightness(.7);
+   transform: scale(.98);
+
+}
