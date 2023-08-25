@@ -1,13 +1,13 @@
 const toggleBtn = document.querySelector('.toggle-btn');
 const toggleBtnIcon = document.querySelector('.toggle-btn i'); // Corrected selector
 const mobileVersion = document.querySelector('.mobile-version');
-const body = document.querySelector('.header-section');
-const bodyT = document.body;
+const header = document.querySelector('.header-section');
+const body = document.body;
 
 toggleBtn.onclick = function () {
     mobileVersion.classList.toggle('active');
-    body.classList.toggle('transparent-black-1');
-    bodyT.classList.toggle('transparent-black');
+    header.classList.toggle('transparent-black-1');
+    body.classList.toggle('transparent-black');
 
     const isActive = mobileVersion.classList.contains('active');
     toggleBtnIcon.classList = isActive
