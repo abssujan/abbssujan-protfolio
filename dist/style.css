@@ -248,3 +248,15 @@
     font-size: calc(.6 * var(--size));
     line-height: 0;
   }
+
+  /* weekend mode scrolbar hide */
+  ::-webkit-scrollbar {
+    display: none;
+  } 
+
+  #weekend-mode {
+    display: none;
+  }
+  #image-2 {
+    display: none;
+  }

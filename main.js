@@ -46,3 +46,26 @@ function startRevealLoop() {
 }
 
     startRevealLoop();
+    // weekend mode hide and display
+
+    const checkbox = document.getElementById('check-5');
+    const mainContainer = document.getElementById('middile-container');
+    const weekendMode = document.getElementById('weekend-mode');
+    const imageOne = document.getElementById('image-1');
+    const imageTwo = document.getElementById('image-2');
+
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            // Checkbox is checked, hide main-container and show weekend-mode
+            mainContainer.style.display = 'none';
+            weekendMode.style.display = 'block';
+            imageOne.style.display = 'none';
+            imageTwo.style.display = 'block'
+        } else {
+            // Checkbox is not checked, show main-container and hide weekend-mode
+            mainContainer.style.display = 'block';
+            weekendMode.style.display = 'none';
+            imageOne.style.display = 'block';
+            imageTwo.style.display = 'none';
+        }
+    });
