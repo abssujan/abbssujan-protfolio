@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- tailwind css link -->
         <link href="/dist/output.css" rel="stylesheet">
+        <!-- custom css -->
+        <link rel="stylesheet" href="/dist/style.css">
         <!-- google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +18,138 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     </head>
-    <body>
-        <h1 class=" font-inter text-3xl">sdflksjdlf</h1>
-        <script src="" async defer></script>
+    <body class="relative z-10">
+        <!-- main container -->
+        <div class="main-container w-full">
+            <!-- layer container -->
+            <div class="layer-container flex">
+                <!-- div-right-side -->
+                <div class="right-side hidden w-100 h-screen lg:block">
+                    <!-- main-image -->
+                    <img id="image-1" class="  h-full w-full object-cover object-top contrast-75 brightness-75" src="/image/IMG_0916.jpeg" alt="">
+                    <img id="image-2" class="  h-full w-full object-cover object-top contrast-75 brightness-75" src="/image/IMG20220707185140.jpg" alt="">
+                </div>
+                <!-- div-left-side -->
+                <div class="left-side w-full lg:w-110 relative h-screen overflow-hidden flex flex-col">
+                    <!-- header section -->
+                    <div class="header-section h-20 border-b-2 border-black bg-white">
+                        <!-- heading logo or tag -->
+                        <div class="header-logo px-4 flex items-center justify-between h-full">
+                          <a href="#" class=" text-3xl font-inter uppercase font-bold">abssujan</a>
+                          <div class="toggle-btn z-50">
+                          <i class="fa-solid fa-bars text-3xl cursor-pointer"></i>
+                          </div>
+                        </div>
+                        <!-- dropdown menu for mobile version -->
+                        <div class="mobile-version bg-white absolute top-0 w-full md:w-96 h-screen ">
+                          <!-- mobile version container -->
+                          <div class="flex flex-col w-60 m-100 mt-20">
+                            <!-- image div -->
+                            <div class="mobile-img w-60 h-64 mt-10">
+                                <img class="w-full h-full object-cover object-top contrast-75 brightness-75 rounded-xl" src="/image/IMG_0916.jpeg" alt="">
+                            </div>
+                            <!-- mobile-social-icon -->
+                            <div class="mobile-social-icon mt-8 space-x-8 flex items-center justify-center">
+                                <a href="#" class="text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <!-- mobile-nav-list -->
+                            <ul class="flex flex-col justify-center items-center mt-7 space-y-5">
+                                <li><a class="font-inter text-3xl font-semibold" href="#">Home</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">About</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">Portfolio</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">News</a></li>
+                                <li><a class="font-inter text-3xl font-semibold text-gray-400 hover:text-black active:text-black" href="#">Contact</a></li>
+                            </ul>
+                            <!-- mobile-version-footer -->
+                            <div class="mobile-version-footer mt-8 flex justify-center">
+                                <p class="text-sm"> © 2023 abssujan❤Abdus Sabur Sujan</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- pc-version-dropdown -->
+                    </div>
+                    <!-- middile container-regular-->
+
+                    <div class="middile-container h-screen" id="middile-container">
+                        <div class=" flex flex-col justify-center h-full px-5" >
+                            <!-- logo and social icon box -->
+                            <div class="middile-logo-icons">
+                                <!-- heading & paragraph -->
+                                <div class="heading-p">
+                                    <h2 class="text-4xl font-bold font-inter lg:text-5xl">
+                                        <span>A</span><span>b</span><span>d</span><span>u</span><span>s</span>
+                                        <span>S</span><span>a</span><span>b</span><span>u</span><span>r</span>
+                                        <span>S</span><span>u</span><span>j</span><span>a</span><span>n</span>
+                                    </h2>
+                                    <p class="mt-4 text-lg text-justify font-inter font-normal  subpixel-antialiased lg:w-120 lg:font-medium ">
+                                         I am a front-end developer with a passion for creating beautiful
+                                         and responsive web applications.
+                                         With expertise in HTML, CSS, and JavaScript.
+                                    </p>
+                                </div>
+                                <!-- social icons -->
+                                <div class="social-icons-middile mt-7 flex space-x-2">
+                                    <div class="social-icons-middile-div w-10 h-10 bg-gray-300 flex items-center justify-center hover:rounded-none hover:bg-black hover:text-white"><a class="text-lg" href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                                    <div class="social-icons-middile-div w-10 h-10 bg-gray-300 flex items-center justify-center hover:rounded-none hover:bg-black hover:text-white"><a class="text-lg" href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                                    <div class="social-icons-middile-div w-10 h-10 bg-gray-300 flex items-center justify-center hover:rounded-none hover:bg-black hover:text-white"><a class="text-lg" href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                                    <div class="social-icons-middile-div w-10 h-10 bg-gray-300 flex items-center justify-center hover:rounded-none hover:bg-black hover:text-white"> <a class="text-lg" href="#"><i class="fa-brands fa-linkedin"></i></a></div>
+                                    <div class="social-icons-middile-div w-10 h-10 bg-gray-300 flex items-center justify-center hover:rounded-none hover:bg-black hover:text-white"><a class="text-lg" href="#"><i class="fa-brands fa-github"></i></a></div>
+                                </div>
+                            </div>
+                            <!-- middile-two-buttons -->
+                            <div class="middile-two-buttons flex mt-8 space-x-5">
+                                 <!-- buttons-one -->
+                                <div class="middile-buttons-one bg-black transition-all  text-white relative overflow-hidden w-40 h-14 flex items-center justify-center cursor-pointer">
+                                    <a class="py-2 px-3 " href="#"><span class="span-text text-base leading-5 uppercase font-medium tracking-wide">Get in touch</span></a>
+                                </div>
+                                <!-- buttons-two -->
+                                <button class="middile-buttons-two"><i class="fa-regular fa-file"></i> Download CV</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- middile container-regular-end-->
+                    <!-- weekend-mode -->
+                    <div class="weekend-mode px-4 overflow-y-scroll lg:px-10" id="weekend-mode">
+                        <h1 class=" relative after:content-[''] after:absolute after:top-12 lg:after:top-14 after:left-0 after:border-b-4 after:w-28 lg:after:w-36 after:border-black mt-10 font-inter font-bold text-3xl lg:text-5xl">Me on Weekends 😎</h1>
+                        <!-- p tag -->
+                        <div class="weekend-mode-details mt-10 font-inter leading-7 lg:leading-8 text-base lg:text-lg font-medium lg:font-normal lg;text-justify text-gray-500 lg:w-130">
+                            <p class="">Sagittis sed quam platea dignissim et tincidunt vitae tortor viverra. Bibendum et, elementum senectus quam venenatis sapien. Tincidunt erat faucibus risus et libero, semper ultrices imperdiet. Iaculis est ultrices egestas sem tempor aliquet quis. Quis in dui urna sapien, egestas non eu.
+                            </p>
+                            <p class="mt-4">Velit commodo orci feugiat tellus purus. Aliquet nam proin vitae amet sit tristique sollicitudin massa vulputate. Non augue nunc nulla augue fringilla. Tempus pellentesque venenatis elit porttitor. Viverra massa augue varius vitae sapien, non nibh. In donec aliquet vulputate massa at massa, congue feugiat leo. Magna massa sit pellentesque morbi turpis aliquam a quis massa. Sodales donec diam velit duis tristique. Purus eu fermentum, mi dignissim morbi. Ornare consectetur eget at id in. Erat facilisis id sed donec iaculis. Sed eget mattis purus facilisis quis viverra arcu. Amet lorem sed leo vulputate sit ultricies urna. Sagittis ullamcorper pharetra diam scelerisque arcu. At lacinia quam turpis purus purus, nunc semper tortor sed.</p>
+                            <p class="mt-4">Arcu lectus porttitor vel, et. Etiam nulla est tortor adipiscing. Fermentum pretium massa pharetra, id aliquam. Morbi dignissim et ut odio volutpat porttitor ac. Consectetur dictum cursus ultrices sed scelerisque. Ut pharetra, aliquam aliquet feugiat duis semper interdum sed quam. Elementum egestas lacus, a vitae orci rutrum. Neque lorem orci dui, fermentum. Risus aliquam nibh habitasse justo amet.
+
+                            </p>
+                            <p class="font-semibold text-xl mt-4 pb-40">Drop Your Mail: <span class="text-gray-800">abdussabursujan@gamil.com</span></p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                    <!-- footer -->
+                    <div class="h-16 border-t-2 border-black absolute bottom-0 w-full fixed z-10 bg-white">
+                        <div class="footer-wraper w-full h-full flex items-center justify-center space-x-4">
+                            <h4 class="font-inter font-semibold text-base">Weekend Mode</h4>
+                             <!-- checked box -->
+                            <div class="checkbox-wrapper-5 mt-2">
+                                <div class="check">
+                                  <input id="check-5" type="checkbox">
+                                  <label for="check-5"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- layer container end here -->
+        </div>
+        <script src="/main.js" ></script>
     </body>
 </html>
