@@ -260,3 +260,17 @@
   #image-2 {
     display: none;
   }
+
+  /* border right */
+  /* .left-site-wrapper::before {
+    content: '';
+    position: absolute;
+    border-right: 2px solid black;
+    height: 100%;
+    right: 90px;
+    z-index: 500;
+    transition-delay: 0.2s;
+  } */
+  .border-none::before {
+    border-right: none;
+  }
